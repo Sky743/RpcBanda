@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Rameshwar Prasad College</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+
+/* Header/logo Title */
+.header {
+  padding: 10px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+}
+
+/*.header img {
+  width: 20%;
+  height: auto;
+}
+*/
+
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 40px;
+}
+
+/* Style the top navigation bar */
+
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+
+
+.icon-bar {
+  position: fixed;
+  top: 90%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+}
+
+.icon-bar a:hover {
+  background-color: #000;
+}
+
+.facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.google {
+  background: #dd4b39;
+  color: white;
+}
+
+.linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.content {
+  margin-left: 75px;
+  font-size: 30px;
+}
+
+.content {
+  margin-left: 75px;
+  font-size: 30px;
+}
+</style>
+</head>
+<body>
+
+<div class="header" >
+  <div class="w3-content w3-section" >
+    <img class="mySlides" src="college photos/c.jpg"   style="width:100%" height="300">
+    <img class="mySlides" src="college photos/college photo.jpg" style="width:100%" height="300">
+    <img class="mySlides" src="college photos/a.jpg" style="width:100%" height="300">
+    <img class="mySlides" src="college photos/b.jpg" style="width:100%" height="300">
+  </div>
+  <h1><marquee behavior="alternate">Rameshwar Prasad College Pachnehi, Banda </marquee></h1>
+  <p style="font-size:28px"><b>District : Banda ,Uttar Pradesh </b></p>
+  <p style="font-size:28px"><b> PinCode: 210001</b></p>
+</div>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#" style="padding:0px;">
+      <img src="college photos/logo.jpg" width="48" height="48" alt="" loading="lazy">
+      </a>
+   </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Home</a></li>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Courses<span class="caret"></span></a>
+      <ul class="dropdown-menu">
+          
+          
+          <li><a href="BED.html">B.Ed</a></li>
+          <li><a href="BTC.html">D.EL.ED(BTC)</a></li>
+          <li><a href="BSC.html">B.Sc/B.A.</a></li>
+          <li><a href="LLB.html">LL.B.(3years)/B.A LL.B.(5years)</a></li>
+          <li><a href="ITI.html">ITI</a></li>
+        </ul>
+      </li>
+      <li><a href="campus life.html"><b>Campus Life</b></a></a></li>
+      <li><a href="management.html"><b>AFFILIATIONS</b></a></a></li>
+      <li class="pull-right"><a href="contact.html"><b>Contact</b></a></li>
+    </ul>
+  </div>
+</nav>
+
+
+<div class="icon-bar">
+  <a href="https://www.facebook.com/groups/311344873556687/?ref=share" class="facebook"><i class="fa fa-facebook"></i></a> 
+  <a href="https://twitter.com/CollegePrasad?s=09" class="twitter"><i class="fa fa-twitter"></i></a> 
+  <a href="http://www.admissionjankari.com/college-details/d.el.ed/rameshwar-prasad-college" class="google"><i class="fa fa-google"></i></a> 
+  <a href="https://www.linkedin.com/in/rameshwar-prasad-college-pachnehi-banda-0350aa1b4" class="linkedin"><i class="fa fa-linkedin"></i></a>
+  <a href="#" class="youtube"><i class="fa fa-youtube"></i></a> 
+</div>
+
+<div class="content">
+
+  
+
+</div>
+
+
+
+
+
+
+<script>
+  var myIndex = 0;
+  carousel();
+  
+  function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+  }
+  </script>
+
+
+
+
+</body>
+</html>
